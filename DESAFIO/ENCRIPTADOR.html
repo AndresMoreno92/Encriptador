@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encriptador</title>
+  <link href="./style.css" rel="stylesheet">
+  <script src="./JAVA.js" defer></script>
+
+</head>
+
+<body class="body">
+ 
+  <!-- Contenido principal -->
+  <main class="main">
+    
+    <!-- Panel principal (de entrada) -->
+    <div class="input-panel">
+
+      <!-- Input de texto -->
+      <textarea name="input" id="input" spellcheck="false" class="input-area"
+        placeholder="Ingrese el texto que desea encriptar o desencriptar."></textarea>
+      <div class="flex flex-col">
+
+        
+        <!-- Mensaje de error -->
+        <span id="errot_text" class="error-label"></span>
+        <div class="flex justify-evenly w-full ">
+         
+          <!-- Botón encriptar -->
+          <button id="encrypt_button" title="Encriptar el texto" class="primary-button">Encriptar</button>
+
+         <!-- Botón desencriptar -->
+         <button class="secondary-button" id="decrypt_button" title="Desencriptar el texto">Desencriptar</button>
+
+          
+        </div>
+      </div>
+             
+    </div>
+    <!-- Panel de resultados -->
+    <div class="output-panel">
+
+      <!-- Imagen si no se introduce texto -->
+
+      <div class="absolute inset-0 flex flex-col select-none-" id="error_panel">
+        <div class="m-auto text-center text-gray-600">
+          <img src="./img/FONDO 2.webp" alt="" class="px-10">
+                   
+        </div>
+      </div>
+
+      
+      
+      <!-- Resultado desencriptación -->
+
+      <div class="answer-panel" id="answer_panel">
+        <div class="w-full text-xl break-words" id="answer_text">
+        </div>
+        <div class="flex">
+          
+          <!-- Botón para copiar -->
+
+          <button id="copy_button" title="Copiar al portapapeles" class="secondary-button mx-auto">Copiar</button>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
